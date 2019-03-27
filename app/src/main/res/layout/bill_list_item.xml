@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout xmlns:bind="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+
+        <import type="java.lang.Integer" />
+        <import type="java.lang.String" />
+
+        <variable
+            name="bill"
+            type="com.example.root.roomdatabinding.model.Bill" />
+
+        <variable
+            name="gen"
+            type="com.example.root.roomdatabinding.utility.RandomNumberGenerator" />
+
+    </data>
+
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvBillNumber"
+            android:layout_width="match_parent"
+            android:text="@{Integer.toString(bill.billNo)}"
+            android:layout_height="wrap_content"
+            android:padding="5dp" />
+
+
+        <TextView
+            android:id="@+id/tvCustomerName"
+            android:layout_width="match_parent"
+            android:text="@{bill.customerName}"
+            android:layout_height="wrap_content"
+            android:padding="5dp" />
+
+
+        <TextView
+            android:id="@+id/tvMobileNumber"
+            android:layout_width="match_parent"
+            android:text="@{bill.customerNo}"
+            android:layout_height="wrap_content"
+            android:padding="5dp" />
+
+
+        <TextView
+            android:id="@+id/tvBillAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black" />
+
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RoomDataBinding</string>
+    <string name="lbl_add">Add</string>
+</resources>
